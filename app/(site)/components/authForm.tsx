@@ -12,9 +12,7 @@ import {signIn} from 'next-auth/react'
 
 type Variant = 'LOGIN' | 'REGISTER'
 
-interface AuthFormProps {}
-
-const AuthForm: FC<AuthFormProps> = ({}) => {
+const AuthForm = ({}) => {
     const [variant, setVariant] = useState<Variant>('LOGIN')
     const [isLoading, setIsLoading] = useState(false)
 
